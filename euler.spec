@@ -8,7 +8,7 @@ Version:	%{ver1}.%{ver2}
 Release:	2
 License:	GPL
 Group:		Applications/Math
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/euler/%{name}-%{version}.tar.gz
 # Source0-md5:	e56a0f41c184fc2f416457f0c5ece78f
 Source1:	%{name}.desktop
 Source2:	%{name}.png
