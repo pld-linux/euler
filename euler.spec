@@ -5,7 +5,7 @@ Summary:	EULER, a program for doing mathematics on the computer
 Summary(pl):	EULER, program do obliczeñ matematycznych na komputerze
 Name:		euler
 Version:	%{ver1}.%{ver2}
-Release:	1.1
+Release:	2
 License:	GPL
 Group:		Applications/Math
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
