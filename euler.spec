@@ -9,6 +9,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Math
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	2b71759991443c550dcc3dcffc3f62f8
 URL:		http://euler.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
