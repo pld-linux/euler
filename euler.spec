@@ -5,12 +5,15 @@ Summary:	EULER, a program for doing mathematics on the computer
 Summary(pl):	EULER, program do obliczeñ matematycznych na komputerze
 Name:		euler
 Version:	%{ver1}.%{ver2}
-Release:	1
+Release:	1.1
 License:	GPL
 Group:		Applications/Math
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	e56a0f41c184fc2f416457f0c5ece78f
+Source1:	%{name}.desktop
+Source2:	%{name}.png
 Patch0:		%{name}-doc_path.patch
+Patch1:		%{name}-gcc33.patch
 URL:		http://euler.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,19 +33,21 @@ wymiarach.
 %prep
 %setup -q -n %{name}-%{ver1}
 %patch0 -p1
+%patch1 -p1
 
 %build
-cd source
 %{__make} \
 	CC="%{__cc} %{rpmcflags} -DINSTALL_DIR=\\\"%{_prefix}\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_datadir},%{_bindir}}
-cd source
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir},%{_desktopdir},%{_pixmapsdir}}
+
 %{__make} install \
 	INSTALL_DIR=$RPM_BUILD_ROOT%{_prefix}
-cd ..
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/euler
 
@@ -54,3 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/* README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/euler
+%{_desktopdir}/*.desktop
+%{_pixmapsdir}/*.png
