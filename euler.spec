@@ -8,8 +8,6 @@ Version:	%{ver1}.%{ver2}
 Release:	1
 License:	GPL
 Group:		Applications/Math
-Group(de):	Applikationen/Mathematik
-Group(pl):	Aplikacje/Matematyczne
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/%{name}/%{name}-%{version}.tar.gz
 URL:		http://euler.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
