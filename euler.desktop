@@ -7,5 +7,5 @@ Exec=euler
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Categories=Education;Science;Math;
+Categories=GTK;Education;Science;Math;
 # vi: encoding=utf-8
