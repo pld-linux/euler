@@ -1,0 +1,20 @@
+diff -urN aaa/euler-1.60/source/main.c euler-1.60/source/main.c
+--- aaa/euler-1.60/source/main.c	2002-06-02 15:44:46.000000000 +0200
++++ euler-1.60/source/main.c	2003-06-29 18:21:01.000000000 +0200
+@@ -38,6 +38,7 @@
+ #include "metagtk.h"
+ #include "metaps.h"
+ #include "colbut.h"
++#include "version.h"
+ 
+ /*-----------------------------------------------------------------------
+  *	Global variables
+@@ -1114,7 +1115,7 @@
+ 			break;
+ 		case E_DOC: {
+ 				char *browser;
+-				browser = g_strconcat(prefs.browser," ",INSTALL_DIR,"/share/doc/euler/index.html &",NULL);
++				browser = g_strconcat(prefs.browser," ",INSTALL_DIR,"/share/doc/euler-",VERSION,"/index.html &",NULL);
+ 				system(browser);
+ 				g_free(browser);
+ 			}
