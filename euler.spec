@@ -5,7 +5,7 @@ Summary:	EULER, a program for doing mathematics on the computer
 Summary(pl):	EULER, program do obliczeñ matematycznych na komputerze
 Name:		euler
 Version:	%{ver1}.%{ver2}
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Math
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/%{name}/%{name}-%{version}.tar.gz
@@ -43,8 +43,7 @@ cd source
 	INSTALL_DIR=$RPM_BUILD_ROOT%{_prefix}
 cd ..
 
-rm -rf $RPM_BUILD_ROOT%{_datadir}/euler/docs
-gzip -9nf README ChangeLog TODO
+#rm -rf $RPM_BUILD_ROOT%{_datadir}/euler/docs 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/euler
-%doc docs/*
-%doc *.gz
+#%doc docs/*
+%doc README ChangeLog TODO
