@@ -8,11 +8,10 @@ Version:	%{ver1}.%{ver2}
 Release:	2
 License:	GPL
 Group:		Applications/Math
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 URL:		http://euler.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 EULER is a program for quickly and interactively computing with real
