@@ -1,0 +1,12 @@
+diff -urN euler-1.60.orig/source/metaps.c euler-1.60.new/source/metaps.c
+--- euler-1.60.orig/source/metaps.c	2002-05-25 16:15:52.000000000 +0200
++++ euler-1.60.new/source/metaps.c	2004-07-11 11:38:38.325823600 +0200
+@@ -209,7 +209,7 @@
+ //	rectangle clipping
+ //	x1 y1 x2 y2 setclip
+ static char setclipmacro[]= "/setclip {\n\
+-gsave
++gsave\n\
+ 	/y2 exch def\n\
+ 	/x2 exch def\n\
+ 	/y1 exch def\n\
