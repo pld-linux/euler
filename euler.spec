@@ -13,7 +13,6 @@ URL:		http://euler.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 EULER is a program for quickly and interactively computing with real
