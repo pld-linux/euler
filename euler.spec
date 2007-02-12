@@ -2,7 +2,7 @@
 %define		ver2	6
 
 Summary:	EULER, a program for doing mathematics on the computer
-Summary(pl.UTF-8):   EULER, program do obliczeń matematycznych na komputerze
+Summary(pl.UTF-8):	EULER, program do obliczeń matematycznych na komputerze
 Name:		euler
 Version:	%{ver1}.%{ver2}
 Release:	2
