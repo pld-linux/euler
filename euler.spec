@@ -2,7 +2,7 @@
 %define		ver2	6
 
 Summary:	EULER, a program for doing mathematics on the computer
-Summary(pl):	EULER, program do obliczeñ matematycznych na komputerze
+Summary(pl.UTF-8):   EULER, program do obliczeÅ„ matematycznych na komputerze
 Name:		euler
 Version:	%{ver1}.%{ver2}
 Release:	2
@@ -24,10 +24,10 @@ and complex numbers and matrices, or with intervals, in the style of
 MatLab, Octave,... It can draw and animate your functions in two and
 three dimensions.
 
-%description -l pl
-EULER jest programem do szybkich i interaktywnych obliczeñ na liczbach
-rzeczywistych i zespolonych, z przedzia³ami, w stylu MatLaba,
-Octave... Mo¿e narysowaæ i animowaæ funkcje w dwóch lub trzech
+%description -l pl.UTF-8
+EULER jest programem do szybkich i interaktywnych obliczeÅ„ na liczbach
+rzeczywistych i zespolonych, z przedziaÅ‚ami, w stylu MatLaba,
+Octave... MoÅ¼e narysowaÄ‡ i animowaÄ‡ funkcje w dwÃ³ch lub trzech
 wymiarach.
 
 %prep
