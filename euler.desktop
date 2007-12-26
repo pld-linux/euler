@@ -2,10 +2,9 @@
 Name=Euler
 Comment=Numerical computations program
 Comment[pl]=Program do obliczeń numerycznych
-Icon=euler.png
+Icon=euler
 Exec=euler
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=GTK;Education;Science;Math;
 # vi: encoding=utf-8
